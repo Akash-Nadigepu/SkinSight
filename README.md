@@ -1,6 +1,62 @@
 # Skin Sight
 Skin Skight is an AI skin health assistant which helps to identify your possible skin condition with just few clicks, before things get worse.
 
+## DOM
+SkinSight/ 
+├─ AI/ 
+│  ├─ FinalModal.ipnyb 
+├─ backend/ 
+│  ├─ build/ 
+│  │  ├─ index.html 
+│  ├─ controllers/ 
+│  │  ├─ login.js 
+│  │  ├─ skin-results.js 
+│  │  ├─ users.js 
+│  ├─ middlewares/ 
+│  │  ├─ upload.js 
+│  ├─ models/ 
+│  │  ├─ skin-results.js 
+│  │  ├─ users.js 
+│  ├─ utils/ 
+│  │  ├─ config.js 
+│  │  ├─ logger.js 
+│  │  ├─ middleware.js 
+│  │  ├─ skins.js 
+├─ frontend/ 
+│  ├─ build/ 
+│  │  ├─ manifest.json 
+│  ├─ public/ 
+│  │  ├─ index.html 
+│  │  ├─ manifest.json 
+│  │  ├─ robots.txt 
+│  ├─ src/ 
+│  │  ├─ assests/ 
+│  │  ├─ components/ 
+│  │  │  ├─ BulmaSignupForm.js 
+│  │  │  ├─ Footer.js 
+│  │  │  ├─ Home.js 
+│  │  │  ├─ LoginForm.js 
+│  │  │  ├─ NavBar.js 
+│  │  │  ├─ Notification.js 
+│  │  │  ├─ PageNotFound.js 
+│  │  │  ├─ Result.js 
+│  │  │  ├─ ResultHistory.js 
+│  │  │  ├─ SignupForm.js 
+│  │  ├─ reducers/ 
+│  │  │  ├─ loggedUserReducers.js 
+│  │  │  ├─ notificationReducers.js 
+│  │  ├─ services/ 
+│  │  │  ├─ login.js 
+│  │  │  ├─ signup.js 
+│  │  │  ├─ skin-result.js 
+│  │  │  ├─ user.js 
+│  │  ├─ App.js 
+│  │  ├─ index.css 
+│  │  ├─ index.js 
+│  │  ├─ store.js 
+│  ├─ package.json 
+├─ .gitignore 
+├─ README.md
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
@@ -48,3 +104,5 @@ npm run start
 ```
 
 You can view the application at http://localhost:3000/.
+
+
