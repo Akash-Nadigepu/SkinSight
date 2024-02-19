@@ -2,61 +2,59 @@
 Skin Skight is an AI skin health assistant which helps to identify your possible skin condition with just few clicks, before things get worse.
 
 ## DOM
-SkinSight/ 
-├─ AI/ 
-│  ├─ FinalModal.ipnyb 
-├─ backend/ 
-│  ├─ build/ 
-│  │  ├─ index.html 
-│  ├─ controllers/ 
-│  │  ├─ login.js 
-│  │  ├─ skin-results.js 
-│  │  ├─ users.js 
-│  ├─ middlewares/ 
-│  │  ├─ upload.js 
-│  ├─ models/ 
-│  │  ├─ skin-results.js 
-│  │  ├─ users.js 
-│  ├─ utils/ 
-│  │  ├─ config.js 
-│  │  ├─ logger.js 
-│  │  ├─ middleware.js 
-│  │  ├─ skins.js 
-├─ frontend/ 
-│  ├─ build/ 
-│  │  ├─ manifest.json 
-│  ├─ public/ 
-│  │  ├─ index.html 
-│  │  ├─ manifest.json 
-│  │  ├─ robots.txt 
-│  ├─ src/ 
-│  │  ├─ assests/ 
-│  │  ├─ components/ 
-│  │  │  ├─ BulmaSignupForm.js 
-│  │  │  ├─ Footer.js 
-│  │  │  ├─ Home.js 
-│  │  │  ├─ LoginForm.js 
-│  │  │  ├─ NavBar.js 
-│  │  │  ├─ Notification.js 
-│  │  │  ├─ PageNotFound.js 
-│  │  │  ├─ Result.js 
-│  │  │  ├─ ResultHistory.js 
-│  │  │  ├─ SignupForm.js 
-│  │  ├─ reducers/ 
-│  │  │  ├─ loggedUserReducers.js 
-│  │  │  ├─ notificationReducers.js 
-│  │  ├─ services/ 
-│  │  │  ├─ login.js 
-│  │  │  ├─ signup.js 
-│  │  │  ├─ skin-result.js 
-│  │  │  ├─ user.js 
-│  │  ├─ App.js 
-│  │  ├─ index.css 
-│  │  ├─ index.js 
-│  │  ├─ store.js 
-│  ├─ package.json 
-├─ .gitignore 
-├─ README.md
+Project Directory Structure:
+
+**SkinSight/**
+- **AI/** (Directory for machine learning model and analysis)
+    - `FinalModal.ipnyb` (Jupyter notebook with final model)
+- **backend/** (Server-side logic and database handling)
+    - `build/**` (Compiled files for production)
+        - `index.html` (Server-side rendered entry point)
+    - `controllers/**` (Code for handling API requests)
+        - `login.js` (Handles user login)
+        - `skin-results.js` (Manages skin disease prediction results)
+        - `users.js` (User management functionality)
+    - `middlewares/**` (Functions to intercept and process requests)
+        - `upload.js` (Handles file uploads)
+    - `models/**` (Data models for database interaction)
+        - `skin-results.js` (Defines the skin result data structure)
+        - `users.js` (Defines the user data structure)
+    - `utils/**` (Reusable helper functions)
+        - `config.js` (Application configuration settings)
+        - `logger.js` (Logging functionality)
+        - `middleware.js` (Common middleware functions)
+        - `skins.js` (Skin disease-related utility functions)
+- **frontend/** (Client-side user interface)
+    - `build/**` (Compiled React application files)
+        - `manifest.json` (Web app manifest details)
+    - `public/**` (Static assets served directly)
+        - `index.html` (Client-side entry point)
+        - `manifest.json` (Web app manifest details again)
+        - `robots.txt` (Robot exclusion instructions)
+    - `src/**` (React component code and Redux logic)
+        - `assets/**` (Static images and fonts)
+        - `components/**` (Reusable UI components)
+            - `BulmaSignupForm.js` (Signup form using Bulma CSS)
+            - `Footer.js` (Website footer component)
+            - ... (Other UI components)
+        - `reducers/**` (Redux state management reducers)
+            - `loggedUserReducers.js` (Maintains logged-in user data)
+            - `notificationReducers.js` (Handles user notifications)
+        - `services/**` (API interaction and data fetching logic)
+            - `login.js` (Login API calls)
+            - `signup.js` (Signup API calls)
+            - `skin-result.js` (Skin disease prediction API calls)
+            - `user.js` (User data management API calls)
+        - `App.js` (Top-level React component)
+        - `index.css` (Global CSS styles)
+        - `index.js` (React app entry point)
+        - `store.js` (Redux store configuration)
+- `package.json` (Project dependencies and scripts)
+- `.gitignore` (Files to exclude from version control)
+- `README.md` (This file you're reading)
+
+Remember to adapt these suggestions to your specific needs and preferences. By enhancing the visual clarity of your directory tree, you make your project more accessible and understandable for others.
+
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
